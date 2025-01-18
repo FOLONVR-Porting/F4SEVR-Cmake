@@ -33,3 +33,7 @@ endif()
 if (NOT TARGET f4se_loader_common)
 	add_subdirectory(f4se_loader_common)
 endif()
+
+if (NOT TARGET f4se_steam_loader)
+	add_subdirectory(f4se_steam_loader)
+endif()
