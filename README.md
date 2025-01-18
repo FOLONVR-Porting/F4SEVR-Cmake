@@ -8,6 +8,22 @@
 
 2. Clone this repo. 
 
-3. Open in Powershell. Prompt should read `PS C:\dev\F4VR>`.
+3. Open the in folder in PowerShell. Your prompt should look like `PS C:\dev\F4SEVR-Cmake>` or whatever directory you cloned it to.
 
-4. Run respective BAT file.
+4. Run `./f4sevr-build.bat` to compile F4SEVR.
+
+5. Run `./f4sevr-plugin-build.bat` to compile the F4SEVR Plugin Template. 
+	 Note: You must run `./f4sevr-build.bat` first to build the extern folder used to compile the Plugins.
+
+
+F4SEVR Plugin Template can be modified to fit whatever plugin your are compiling. More on this soon.
+
+---
+
+Credits:
+
+RollingRock - `F4SEVR Plugin Template`
+ianpatt - `F4SEVR Source Code/F4SE Source Code`
+
+
+
