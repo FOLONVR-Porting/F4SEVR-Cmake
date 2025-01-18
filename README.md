@@ -13,16 +13,21 @@
 4. Run `./f4sevr-build.bat` to compile F4SEVR.
 
 5. Run `./f4sevr-plugin-build.bat` to compile the F4SEVR Plugin Template. 
+
 	 Note: You must run `./f4sevr-build.bat` first to build the extern folder used to compile the Plugins.
+
+
 
 
 F4SEVR Plugin Template can be modified to fit whatever plugin your are compiling. More on this soon.
 
 ---
 
-Credits:
+##Credits:
 
 RollingRock - `F4SEVR Plugin Template`
+
+
 ianpatt - `F4SEVR Source Code/F4SE Source Code`
 
 
