@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.18)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/versioning.cmake)
 
@@ -21,8 +20,6 @@ endif()
 # ---- Dependencies ---- 
 include_directories(../common)
 include_directories(./include)
-include(GenerateExportHeader)
-
 
 if (NOT TARGET f4se)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../f4sevr/f4se f4se)	# bundled
@@ -36,14 +33,12 @@ if (NOT TARGET xbyak)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../f4sevr/xbyak xbyak)	# bundled
 endif()
 
-#include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/configuration.cmake)
-
 # ---- Plugin source files include ----
 
 include(cmake/headerlist.cmake)
 include(cmake/sourcelist.cmake)
 
-add_library(${PROJECT_NAME} ${sources})
+add_library(${PROJECT_NAME} SHARED "${sources}")
 
 set_target_properties(
 	${PROJECT_NAME}
